@@ -1,0 +1,164 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farming Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/modernizr.custom.js"></script>
+<!-- //js -->
+</head>
+<body class="cbp-spmenu-push">
+	<!--banner-->
+	<div class="banner abt-bnr">
+		<!--header-->		
+		<div class="header">
+			<div class="container">	
+				<div class="logo">
+					<a href="index.html"> <img src="images/logo.png" alt=""/></a>
+				</div>
+				<!-- menu -->
+				<div class="top-nav">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+						<h3>Menu</h3>
+						<a href="index.html">首页</a>
+						<a href="about.html">关于我们</a>
+						<a href="products.html">产品</a>
+						<a href="contact.html" class="active">联系我们</a>
+					</nav>
+					<div class="main buttonset">	
+							<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+							<button id="showRightPush"><img src="images/menu-icon.png" alt=""/></button>
+							<!--<span class="menu"></span>-->
+					</div>
+					<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+					<script src="js/classie.js"></script>
+					<script>
+						var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+						showRightPush = document.getElementById( 'showRightPush' ),
+						body = document.body;
+
+						showRightPush.onclick = function() {
+							classie.toggle( this, 'active' );
+							classie.toggle( body, 'cbp-spmenu-push-toleft' );
+							classie.toggle( menuRight, 'cbp-spmenu-open' );
+							disableOther( 'showRightPush' );
+						};
+
+						function disableOther( button ) {
+							if( button !== 'showRightPush' ) {
+								classie.toggle( showRightPush, 'disabled' );
+							}
+						}
+					</script>
+					<!-- /script-for-menu -->
+				</div>	
+				<!-- //menu -->
+			</div>
+		</div>
+		<!--//header-->
+	</div>
+	<!--//banner-->
+	<!--contact-->
+	<div class="contact">
+		<div class="container">				
+			<div class="contact-grids">
+				<div class="col-md-8 map">
+					<h3>去哪儿找我们</h3>
+					<iframe src="map.html" frameborder="0" style="border:0"></iframe>
+				</div>
+				<div class="col-md-4 address">
+					<h3>联系方式</h3>
+					<p class="cnt-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit,sheets containing Lorem Ipsum passages sed do </p>
+					<p>Eiusmod Tempor inc</p>
+					<p>9560 St Dolor,London</p>
+					<p>Telephone : +2 800 544 6035</p>
+					<p>FAX : +1 800 889 4444</p>
+					<p>Email : <a href="mailto:example@mail.com">mail@example.com</a></p>
+				</div>									
+				<div class="clearfix"> </div>	
+			</div>
+			<div class=" contact-form">
+				<h3>留言给我们</h3>
+				<form>
+					<div class="col-md-6 form-grids">
+						<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '姓名';}" required="">
+						<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '电子邮箱';}" required="">
+						<input type="text" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '手机号码';}" required="">
+					</div>
+					<div class="col-md-6 form-grids">
+						<textarea type="text"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">信息...</textarea>
+						<button class="btn btn-1 btn-1d"> 提&nbsp;&nbsp;&nbsp;&nbsp;交 </button>
+					</div>
+					<div class="clearfix"> </div>					
+				</form>
+			</div>
+		</div>		
+	</div>
+	<!--//contact-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-row">
+				<div class="col-md-4 footer-grids">
+					<h3>导航</h3>
+					<ul>
+						<li><a href="index.html">进入首页</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="products.html">浏览产品</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-grids">
+					<h3>服务</h3>
+					<ul>
+						<li><a href="#">这是第一个服务</a></li>
+						<li><a href="#">这是第一个服务</a></li>
+						<li><a href="#">这是第一个服务</a></li>
+						<li><a href="#">这是第一个服务</a></li>
+						<li><a href="#">这是第一个服务</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-grids">
+					<h2><a href="index.html">Farming</a></h2>
+					<p>这是流行在上世纪60年代随着拉突激光印字传输系统含乱数假文通道释放，以及最近的桌面出版软件Aldus PageMaker包括乱数假文版本。 <p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="footer-left">
+				<p>Copyright &copy; 2015.Company name All rights reserved.</p>
+			</div>
+			<div class="footer-right">
+				<ul class="icons">
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"> </a></li>
+					<li><a class="twt" href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"> </a></li>
+					<li><a class="drbl" href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"> </a></li>
+					<li><a class="be" href="#" data-toggle="tooltip" data-placement="top" title="Behance"> </a></li>
+				</ul>
+			</div>
+			<script>$(function () {
+				$('[data-toggle="tooltip"]').tooltip()
+			})</script>
+		</div>
+	</div>
+	<!--//footer-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"> </script>
+</body>
+</html>

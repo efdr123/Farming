@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<!-- 	<constant name="struts.devMode" value="true"></constant> -->
+	<package name="struts2" namespace="/admin" extends="struts-default,json-default">
+	
+		<interceptors>  
+            <interceptor name="loginInteceptor" class="interceptor.LoginInterceptor" />  
+            <interceptor-stack name="loginStack">  
+                   <interceptor-ref name="loginInteceptor">  
+                       <param name="excludeMethods">login</param>  
+                   </interceptor-ref>  
+                   <interceptor-ref name="defaultStack"></interceptor-ref>  
+            </interceptor-stack>  
+		</interceptors>  
+		      
+		<default-interceptor-ref name="loginStack" /> 
+		
+		<global-results>
+			<result name="toAdminLogin">login.jsp</result>
+			<result name="error">login.jsp</result>
+		</global-results>
+	
+		<action name="*_*" class="action.{2}Action" method="{1}">
+			<result type="json">
+				<param name="root">jsonString</param>
+			</result>
+			<result name="productDelete">product.jsp</result>
+			<result name="productDeleteMore">product.jsp</result>
+			<result name="productSOU">product.jsp</result>
+			<result name="memberSOU">member.jsp</result>
+			<result name="memberDelete">member.jsp</result>
+		</action>
+	</package>
+	<package name="front_struts2" namespace="/" extends="struts-default,json-default">
+		<action name="*_*" class="action.{2}Action" method="{1}">
+			<result type="json">
+				<param name="root">jsonString</param>
+			</result>
+		</action>
+	</package>
+<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+</struts>    
